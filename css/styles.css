@@ -1,0 +1,437 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section { display: block; }
+
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none; }
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0; }
+
+/* ================
+        BASE
+  ================ */
+
+body {
+  Font-Family: Arial, Sans-Serif;
+  letter-spacing: .5px;
+  margin:0;
+  padding: 0;
+  outline:none;
+  line-height: 1.25;
+  color: rgb(29, 29, 29);
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+img { width:100%; }
+
+  .leasycar_img { 
+     background-image: url('../img/bench-accounting-C3V88BOoRoM-unsplash.jpg'); 
+     background-size:cover;
+    height: 800px; }
+
+  .logo svg { width: 80px; }
+
+  .content_overlay {
+    background-color: #00000073;
+    width: 100%;
+    height: 800px; }
+
+  .content-slider {
+    color:#a3a3a3;
+    text-align: center; }
+
+.fond_noir { background-color: black; }
+
+h2 { font-size: 1em }
+
+.intertitle {
+  max-width: 600px;
+  color: #fff;
+  font-size: 4vw }
+
+strong { font-weight: 700 }
+
+p { color: inherit;
+  margin-top: 20px;
+  font-size: 14px;
+ }
+
+a { text-decoration: none }
+
+section { padding: 50px; }
+
+.containe-full {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hight_landingpage {
+  position: relative;
+  top: 130px;
+}
+
+  .container {
+    width: 100%;
+    max-width: 1075px;
+    margin: 0 auto;
+ }
+
+ .spacing { margin: 140px 0 140px 0; }
+
+ .size-1 {
+  font-size: 7vw;
+  position: relative;
+  top: -30px;
+  right: -80px;
+ }
+
+ .size-2 {
+  font-size: 6vw;
+    position: relative;
+    right: -140px;
+    top: -10px;;
+}
+
+.size-3 {
+  font-size: 5vw;
+    position: relative;
+    top: -10px;
+    left: -50px;
+}
+
+.size-4 {
+  font-size: 4vw;
+    position: relative;
+    right: -110px;
+}
+
+
+.size-5 {
+  font-size: 3vw;
+}
+
+
+ .cotent-title {
+   display: flex;
+   justify-content: space-around; }
+
+   .cell-6 {
+     width: 100%;
+     max-width: 538px;
+     display: block; }
+
+  .content-infos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .lc_rental {
+    padding: 10px 0 10px 0;
+    text-align: center;
+    border:solid 3px ;
+    border-radius: 50px;
+    margin: 0 auto;
+    max-width: 250px;
+    width:auto;
+  }
+  .lc_rental a {
+    color : #a3a3a3;
+    font-weight: bold; }
+
+.rental-infos {
+  margin: 30px;
+}
+
+.cell-infos {
+  display: flex;
+  align-items: center;
+  padding: 40px 0 40px 0 }
+
+.lc_icone-infos {
+  margin-right: 90px;
+  width: 60px
+}
+
+.arrow-leasycars {
+  margin: 5px; }
+
+.owl-nav {
+  position: absolute;
+  right: 100px;
+  top: -150px }
+
+div#btntwo,
+div#btnone{
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  color: #a2a3a3;
+  margin: 20px;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  transform: rotate(-135deg) }
+
+div#btntwo {
+  border-bottom: 4px solid;
+  border-left: 4px solid;
+  right: 5px; }
+  
+div#btnone {
+  border-top: 4px solid;
+  border-right: 4px solid;
+  left: 5px; }
+
+.fond-triangulaire {
+  background-image: url(../img/trainglewhiteleasycars.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 880px;
+  background-position: 570px -340px; }
+
+.fond-map {
+  background-image: url(../img/xpanslight-1611258024989.png);
+  background-size: cover;
+  height: 730px;
+  background-repeat: no-repeat;
+  display: flex;
+  background-position: 450px -120px;
+  align-items: center; }
+
+.content-cars { 
+  position: absolute;
+  width: 910px;
+  top: -90px;
+  transform: translate3d(393px, -70px, 0px) }
+
+.cars1 {
+  width: 590px;
+  transform: translate3d(203px, 200px, 0px) }
+
+.cars2 {
+  position: relative;
+  width: 100%;
+  max-width: 880px;
+  top: 120px;
+  transform: translate3d(-12px, 10px, 0px); }
+
+  .faq {
+    display:flex;
+    align-items: center;
+    justify-content: space-around; 
+    margin-top: 80px; }
+
+  .content-border {
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 770px;
+    top: 188px;
+  }
+
+  .border-faq {
+    border-top: 1rem solid;
+    display: block;
+    border-color: #7a7a7a;
+ }
+
+  .pastille-faq {
+    background-color: #7a7a7a;
+    color: #fff;
+    padding: 10px;
+    width: 10px;
+    height: 10px;
+    position: relative; }
+
+  .step-faq p.pastille-faq {
+    line-height: 10px;
+    margin:0 auto 20px; 
+    padding: 15px; 
+    border-radius: 50px;
+  }
+
+  .content-lieu {
+    height: 800px;
+  }
+
+.center-text {
+    text-align:center;
+  }
+  
+
+  .faq div {
+    margin: 10px;
+  }
+
+  .lc_fondnoir {
+      background-color: #404040;
+      height: 700px;
+  }
+
+  .content-faq {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+/* ================
+      LAYOUT
+  ================ */
+
+
+.menu li {
+	cursor: pointer;
+  font-weight: bold;
+  color: white;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  margin: 0 20px 0 20px;
+  display: inline-block; }
+
+h1.logo a {
+  font-size: 1.90vw;
+  text-transform: uppercase;
+  color:rgb(29, 29, 29); }
+
+nav {
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: transform 0.5s ease-in-out, background-color 0.2s cubic-bezier(0.4, 0, 1, 1);
+  padding: 20px 0 20px 0;
+  width:100% 
+}
+
+.navbar-wrapper {
+  height: 6000px; }
+
+
+
+/* ================
+		RESPONSIVES
+================ */
+
+@media (min-width: 768px){ .hamburgergold { display: none; } }
+
+@media (max-width: 768px){
+.hamburgergold {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  border-radius: 7px;
+  position: relative;
+  top: -4px;
+  right: 30px; }
+
+.hamburgergold span {
+	display: block;
+  position: absolute;
+  height: 5px;
+  width: 32px;
+  background:rgb(29, 29, 29);
+  border-radius: 50px;
+  opacity: 1;
+  left: 32px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out; }
+
+	.hamburgergold span:nth-child(1) {
+	  top: 8px;
+	}
+
+	.hamburgergold span:nth-child(2) {
+	  top: 19px;
+	}
+
+	.hamburgergold span:nth-child(3) {
+	  top: 30px;
+	}
+
+
+.hamburgergold.closed span:nth-child(1) {
+  top: 20px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg); }
+
+.hamburgergold.closed span:nth-child(2) {
+  opacity: 0;
+  left: -60px }
+
+.hamburgergold.closed span:nth-child(3) {
+  top: 20px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.menu li{ display:none; }
+h1.logo a { font-size: 20px; } }
+
+
+.section_block {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper_container {
+  height: 3000px;
+}
+
+.owl-carousel div img.lc_owlslider_img {
+  max-width: 550px;
+}
+
+
+
+/* ================
+			CANVAS
+================ */
