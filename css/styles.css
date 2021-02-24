@@ -161,6 +161,11 @@ section { padding: 50px; }
     align-items: center;
   }
 
+  .logo_leasycars {
+    width:100%;
+    max-width: 100px;
+  }
+
   .lc_rental {
     padding: 10px 0 10px 0;
     text-align: center;
