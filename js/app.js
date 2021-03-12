@@ -22,38 +22,47 @@ if ($('#scrollBot').length > 0) {
 
     if(scroll_top === 0) {
       $('.menu li a').css({ color: "#fff" })
-      $("#scrollBot").css({ 
-        position : "absolute",
-        background: "transparent",
-        top: '0',
-        boxShadow: '0 4px 10px -10px rgba(0,0,0,0)' })
-        $(".cls-1").css({ fill: "#fff" })
-        $('.hamburgergold span').css({ background: "#fff"})
-    } else if(scroll_top > 200){
+      $("#scrollBot")
+          .css({ 
+            transition: 'ease-out .2s',
+            position : "absolute",
+            padding: "35px 0 35px 0",
+            background: "transparent",
+            top: '0',
+            boxShadow: '0 4px 10px -10px rgba(0,0,0,0)' 
+          })
+
+      $(".cls-3").css({ fill: "#fff" })
+
+      $('.hamburgergold span').css({ background: "#fff"})
+
+    } else if(scroll_top > 226){
+
       if(scroll_top < last_scroll_top) {
-       $("nav").css({
-        transform: "translate3d(0px, 0px, 0px)",
-        position: "sticky", 
-        top: '0'
-      })
-    } else if(scroll_top > last_scroll_top){
-        $('.menu li a').css({ 
-          color: "#000" })
+        $('.menu li a').css({ color: "#000" })
         $('.hamburgergold span').css({ background: "#000"})
-        $("#scrollBot").css({ 
-          background: "white",
-          boxShadow: '0 4px 10px -10px rgba(0,0,0,.6)'
-         })
-        $("nav").css({ 
-          transform: "translate3d(0px, -85px, 0px)", })
-        $(".cls-1").css({ fill: "#000" })
-       }
+       $("#scrollBot")
+          .css({
+            transform: "translate3d(0px, 0px, 0px)",
+            position: "fixed", 
+            top: '0' }) 
+    } else if(scroll_top > last_scroll_top){
+        $("#scrollBot")
+          .css({ 
+            background: "#fff",
+            padding: "0",
+            boxShadow: '0 4px 10px -10px rgba(0,0,0,.6)'
+          })
+        $("#scrollBot")
+          .css({ 
+            padding: "10px 0 10px 0",
+            transform: "translate3d(0px, -102px, 0px)", })
+            $(".cls-3").css({  fill: "#000" })
+        }
     }
       last_scroll_top = scroll_top;
   
-    })
-  })
-}
+    }) }) }
 
 /* ==============
         GSAP
