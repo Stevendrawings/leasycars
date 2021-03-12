@@ -355,9 +355,20 @@ nav {
 		RESPONSIVES
 ================ */
 
-@media (min-width: 768px){ .hamburgergold { display: none; } }
+@media screen and (max-width: 1024px){ 
+    .cars2 {
+      position: relative;
+      width: 100%;
+      max-width: 630px;
+      top: 90px;
+      transform: translate3d(-490px, 130px, 0px);
+  }
+}
 
-@media (max-width: 768px){
+
+@media screen and  (min-width: 768px){ .hamburgergold { display: none; } }
+
+@media screen and (max-width: 768px){
 .hamburgergold {
   width: 35px;
   height: 35px;
