@@ -32,7 +32,7 @@ if ($('#scrollBot').length > 0) {
             boxShadow: '0 4px 10px -10px rgba(0,0,0,0)' 
           })
 
-      $(".cls-3").css({ fill: "#fff" })
+      $("#Calque_2").css({ fill: "#fff" })
 
       $('.hamburgergold span').css({ background: "#fff"})
 
@@ -57,7 +57,7 @@ if ($('#scrollBot').length > 0) {
           .css({ 
             padding: "10px 0 10px 0",
             transform: "translate3d(0px, -102px, 0px)", })
-            $(".cls-3").css({  fill: "#000" })
+            $("#Calque_2").css({  fill: "#000" })
         }
     }
       last_scroll_top = scroll_top;
