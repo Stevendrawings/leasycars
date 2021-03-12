@@ -23,7 +23,7 @@ if ($('#scrollBot').length > 0) {
     if(scroll_top === 0) {
       $('.menu li a').css({ color: "#fff" })
       $("#scrollBot").css({ 
-        position : "",
+        position : "absolute",
         background: "transparent",
         top: '0',
         boxShadow: '0 4px 10px -10px rgba(0,0,0,0)' })
